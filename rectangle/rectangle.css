@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.rectangle {
+    background-color: rgb(36, 139, 170);
+    width: 300px;
+    height: 150px;
+    cursor: pointer;
+}
+.mini {
+    animation-name: minimize;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes minimize {
+    to {
+        width: 0px;
+        height: 0px;
+    }
+}
